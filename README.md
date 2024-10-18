@@ -205,4 +205,3 @@ This package is open-source and licensed under the [MIT License](LICENSE).
 
 ```
 
-Let me know if you need any further changes!
