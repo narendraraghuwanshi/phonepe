@@ -1,6 +1,14 @@
 <?php
 
 namespace PhonePe;
+
+
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
+use Illuminate\Support\Facades\Log;
+use PhonePe\Exception\InvalidEnvironmentVariableException;
+use PhonePe\Exception\PhonePeException;
+
 class PhonePeGateway
 {
     private mixed $merchantId;
