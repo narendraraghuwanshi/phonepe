@@ -21,10 +21,9 @@ class LaravelPhonePeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes(
-            [
-                __DIR__ . '/config/phonepe.php' => config_path('phonepe.php'),
-            ], 'config'
-        );
+        // Publish configuration
+        $this->publishes([
+            __DIR__ . '/../config/phonepe.php' => config_path('phonepe.php'),
+        ], 'phonepe-config');
     }
 }

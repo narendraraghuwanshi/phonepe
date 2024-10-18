@@ -21,6 +21,13 @@ composer require zarenta/phonepe
 
 ### Step 2: Publish Configuration
 
+
+Add Service provider to `bootstrap/provider.php` file
+
+```bash
+PhonePe\LaravelPhonePeServiceProvider::class,
+```
+
 Publish the configuration file using the artisan command:
 
 ```bash
