@@ -3,10 +3,9 @@
     "description": "Laravel PhonePay payment gateway",
     "type": "composer-plugin",
     "license": "MIT",
-    "require": {},
     "autoload": {
         "psr-4": {
-            "Zarenta\\Phonepe\\": "src/"
+            "Phonepe\\": "src/"
         }
     },
     "authors": [
@@ -20,6 +19,6 @@
         "composer-plugin-api": "^2.0"
     },
     "extra": {
-        "class": "Zarenta\\Phonepe\\PhonePeServiceProvider"
+        "class": "PhonePe\\LaravelPhonePeServiceProvider"
     }
 }
