@@ -1,0 +1,19 @@
+{
+    "name": "zarenta/phonepe",
+    "description": "Laravel PhonePay payment gateway",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zarenta\\Phonepe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Narendra Singh Raghuwanshi",
+            "email": "nr9557@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
