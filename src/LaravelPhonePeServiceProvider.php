@@ -11,7 +11,10 @@ class LaravelPhonePeServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Optionally, you can merge config (not necessary if only publishing)
+        $this->mergeConfigFrom(
+            __DIR__ . '/config/phonepe.php', 'phonepe'
+        );
     }
 
     /**
@@ -21,9 +24,9 @@ class LaravelPhonePeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Publish configuration
+        // Publish configuration file
         $this->publishes([
-            __DIR__ . '/../config/phonepe.php' => config_path('phonepe.php'),
+            __DIR__ . '/config/phonepe.php' => config_path('phonepe.php'),
         ], 'phonepe-config');
     }
 }
