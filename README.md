@@ -9,7 +9,7 @@ This package provides an easy way to integrate the PhonePe payment gateway into 
 - Secure callback handling for payment notifications.
 
 ## Installation
-
+To get your api key go to  [PhonePe Official Website](https://business.phonepe.com/register?referral-code=RF2410031828387153842834)
 ### Step 1: Install the Package
 Run the following command to install the package via Composer:
 
@@ -172,15 +172,8 @@ public function checkTransactionStatus($transactionId)
 
     $phonePe = new PhonePeGateway();
 
-    $transactionData = [
 
-        'merchantId' => config('phonepe.merchantId'),
-
-        'transactionId' => $transactionId,
-
-    ];
-
-    $status = $phonePe->getTransactionStatus($transactionData);
+    $status = $phonePe->getTransactionStatus(\request()->all());
 
     if ($status) {
 
